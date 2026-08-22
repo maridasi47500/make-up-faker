@@ -1,0 +1,3 @@
+{% extends 'base.html' %}{% block content %}<form  enctype="multipart/form-data" method="POST">
+<div class="field"><label for="somefielddetectlanguagecontent">content</label><input type="text" id="somefielddetectlanguagecontent" name="content"/></div>
+<div class="field"><label for="somefielddetectlanguagelanguage">language</label><input type="text" id="somefielddetectlanguagelanguage" name="language"/></div><div class="actions"><input type="submit"/></div></form>{% for x in detectlanguages %}{{x["content"] }}{% endfor %}{% endblock %}{% block liens %}<a href="/">bienvenue</a><a href="/add_one_detectlanguage"> add one detectlanguage</a>{% endblock %}
